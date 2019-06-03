@@ -31,6 +31,9 @@ class App extends Component {
         });
       }
     } catch (error) {
+      this.setState({
+        error : "Sorry, the limits for api calls is reached."
+      });
       console.log(error);
     }
   }
